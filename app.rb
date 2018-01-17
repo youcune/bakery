@@ -60,6 +60,10 @@ end
 # --------------------------------------------------------------------
 # API
 # --------------------------------------------------------------------
+get '/health_check' do
+  { status: 'OK' }.to_json
+end
+
 get '/rm-mini/:cmd' do
   { status: rm_mini(params[:cmd]) }.to_json
 end
