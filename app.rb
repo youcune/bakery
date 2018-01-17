@@ -61,7 +61,7 @@ end
 # API
 # --------------------------------------------------------------------
 get '/rm-mini/:cmd' do
-  { status: rm_mini(cmd) }.to_json
+  { status: rm_mini(params[:cmd]) }.to_json
 end
 
 get '/oyasumi' do
