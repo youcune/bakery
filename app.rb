@@ -6,7 +6,7 @@ require 'dotenv/load'
 # Hardware
 # --------------------------------------------------------------------
 def rm_mini(cmd)
-  system "/home/pi/apps/BlackBeanControl/BlackBeanControl.py -c #{cmd}"
+  # system "/home/pi/apps/BlackBeanControl/BlackBeanControl.py -c #{cmd}"
 end
 
 def webhook_ifttt(event)
